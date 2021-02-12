@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hauskey Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/myJss.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/myCSS.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <a class="navbar-brand" href="#"><img src="images/hauskey_logo.svg" alt="logo" style="width:80px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseSmallScreen">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseSmallScreen">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">How Hauskey Works</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">SIGN UP</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">CAD</a>
+                <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">USD</a>
+                    <a class="dropdown-item" href="#">INR</a>
+                    <a class="dropdown-item" href="#">EUR</a>
+                    <a class="dropdown-item" href="#">AUD</a>
+                </div>
+          </li>
+		</ul>
+        </div>
+	</nav> 
+    <header class="text-white">
+        <div class="mainImage"></div>
+        <div class="container-fluid">
+            <!--<div class="col-sm-12 col-md-12 text-center" id="backImg"> 
+               
+               style="background-image: url('images/backImage.jpg') no-repeat center center; height: 500px;
+            </div> -->
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class = "text-center mb-5">Your Pre-Construction Condo Marketplace.</h1>
+                    <h2 class = "text-center mb-10">Search. Secure. Earn up to 3% in Cash Back Commission Rebates.</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0" style="width: 60%; margin: 0px auto;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Search for Developers, Projects or Locations ">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br /> <br />
+    <div class="container-fluid">
+      <div class="row p-3 m-3 text-center">
+        <div class="col-lg-4">
+            <h1 class="text-success">$1.6M</h1>
+            <p class="lead mb-0">Cash Back unclaimed every day.</p>
+        </div>
+          <div class="col-lg-4">
+            <h1 class="text-success">$91,888</h1>
+            <p class="lead mb-0">Today's Unclaimed Cash Back. Have you claimed yours?</p>
+        </div>
+          <div class="col-lg-4">
+            <h1 class="text-success">$300,000,000</h1>
+            <p class="lead mb-0">Cash Back available this year.</p>
+        </div>
+      </div>
+    </div>
+    <br /> <br />
+    <div class="container-fluid bg-light">
+        <div class="row bg-light p-5">
+            <div class="col-lg-4 p-4" style="width: 60%; margin: 0px auto;">
+                <br />
+                <h5>Don’t leave any money on the table!</h5>
+                <p class="lead">See how much money Haüskey can put back into your pocket.</p>
+            </div>
+            <div class="col-lg-8 text-center">
+                <h5>PROPERTY PRICE:</h5>
+                <h1 class="text-primary ">$2,500,000</h1>
+                <br />
+                <label style="font-size:20px">$0M&nbsp;</label><input type="range" min="0" max="5000000" value="2500000" class="slider" id="slider"><label style="font-size:20px">&nbsp;$5.0M</label>
+                <br /> <br />
+                <h5>CASH BACK:</h5>
+                <h1 id="sliderVal" class="text-primary ">~$74,250</h1>
+            </div>
+       </div>
+        <br /><br /><br />
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h1 class="text-center pt-2"><b>Quick Search</b></h1>
+                <br />
+                <p class="text-center">For our registered members</p>
+                <br />
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active p-2">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image1.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="text-left pb-2" id="gal1">Available two bedroom unit.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image2.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Earn thousands in cash rewards on select projects.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image3.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Explore properties listed at under 1 million.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image2.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Available two bedroom unit.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image3.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Earn thousands in cash rewards on select projects.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image1.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Explore properties listed at under 1 million.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image3.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Available two bedroom unit.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image1.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Earn thousands in cash rewards on select projects.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image2.jpeg" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3></h3>
+                                        <p class="pb-2 text-left" id="gal1">Explore properties listed at under 1 million.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#imageCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h1 class="text-center pt-5"><b>Featured Projects</b></h1>
+                <br />
+                <div id="imageCarousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image1.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$11,900</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image2.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$11,967</p>
+                                    </div>
+                                    <div id="cap1" style="width: 60%; margin: 0px auto;">
+                                    <h2 class="text-center">Notting Hill 2 Condos</h2>
+                <p class="text-center">Unique. Charming and cosmopolitan. A desirable way of life and iconic way of living. Inspired by the much heralded community in Central London, Notting Hill is celebrated for its colourful culture and upscale shops along Portobello Road, creating one of London’s most popular tourist destination.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image3.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success"  id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$22,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image1.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$11,900</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image2.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$11,967</p>
+                                    </div>
+                                    <div id="cap1" style="width: 60%; margin: 0px auto;">
+                                    <h2 class="text-center">Sugar Wharf Condominiums</h2>
+                <p class="text-center">Nestled on Toronto’s Waterfront, Sugar Wharf Condominiums is everything you’ve been dreaming of. A place where dreams, work and play live happily. It’s where homes, offices, shopping, restaurants, daycare, transit, schools and parks are rolled into one magical community. Sugar Wharf combines everything you love into the sweetest life you can imagine.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image3.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$22,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-2">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image1.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$11,900</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image2.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$11,967</p>
+                                    </div>
+                                    <div id="cap1" style="width: 60%; margin: 0px auto;">
+                                    <h2 class="text-center">Empire Quay House</h2>
+                <p class="text-center">Where the city meets the waterfront, great things are sure to happen. Located in Toronto’s budding employment and innovation district, Quay House will offer its residents the opportunity to live in a people-centric, sustainable community that will grow and evolve as they do.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-md-4">
+                                    <img src="images/image3.jpeg" class="img-responsive rounded">
+                                    <div class="carousel-caption bg-success" id="cgal2">
+                                        <h3></h3>
+                                        <p id="gal2">Cash back Starting from C$22,200</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#imageCarousel2" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageCarousel2" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div class="row p-3 m-3 text-center">
+            <div class="col-xs-12 col-md-12 ">
+                <h1><strong>About Haüskey</strong></h1>
+            </div>
+        </div>
+        <div class="row p-3 m-3 text-center">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="images/pg1.png" class="img-responsive1">
+                <h5><strong>CASH BACK</strong></h5>
+                <p class="mb-0">Earn thousands in Haüskey Cash Back Rebates when you purchase a pre-construction property on our platform.</p>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="images/pg2.png" class="img-responsive1">
+                <h5><strong>EXCLUSIVE ACCESS</strong></h5>
+                <p class="mb-0">Search our marketplace for access to all pre-construction units and leading projects in the GTHA.</p>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="images/pg3.png" class="img-responsive1">
+                <h5><strong>CONCIERGE SERVICE</strong></h5>
+                <p class="mb-0">Instantly connect to our concierge service and a licensed sales representative can assist you in locking down a deal.</p>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <img src="images/pg4.jpg" class="img-responsive1">
+                <h5><strong>EXPERIENCED TEAM</strong></h5>
+                <p class="mb-0">Haüskey Realty Brokers have over of 30 years of real estate experience and are excited to get you, our client, the best return on your investment!</p>
+            </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-1 col-md-1 col-lg-1">
+               
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5 pl-5">
+                <img src="images/svg1.svg" style="width: 80%;">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center px-2 py-5">
+                <h1>REFER AND EARN</h1>
+                <p class="lead text-secondary"><b>Refer a friend and you both can earn $50 in Haüskey Credit.</b></p>
+                <br />
+                <button type="button" class="btn btn-dark">Login to view referral code</button>
+            </div>
+        </div>
+    </div>
+    <br /> <br /> <br />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-6 col-lg-6 py-5">
+                <img src="images/svg2.png" style="width: 110%;">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 justify-content-center py-5">
+                <h1>Move to our App!</h1>
+                <h4 class="text-secondary" style="line-height: 50px;">Invest on the go with the Haüskey App for iPhone, Android, and iPad.</h4>
+                <br />
+                <a href="#"><img src="images/g1.png" style="width: 35%;"></a>
+                <a href="#"><img src="images/g2.png" style="width: 35%;"></a>
+            </div>
+        </div>
+    </div>
+      <!-- Site footer -->
+    <footer class="site-footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <img src="images/hauskey_logo.svg" alt="logo" style="width:90px;" id="fsvg">
+                    <p class="text-right pt-0">Contact Us: customercare@hauskey.com <a href="#">&nbsp;&nbsp;Login </a>| <a href="#">Sign Up</a></p>
+            </div>
+            <div class="row p-3 m-3">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <ul id="ullia">
+                        <li><a href="#"><img src="images/g1.png" style="width: 70%;"></a></li>
+                        <li><a href="#"><img src="images/g2.png" style="width: 70%;"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <ul id="ullia">
+                        <li><a href="#" id="liaf">About Us</a></li>
+                        <li><a href="#" id="liaf">How Haüskey Works</a></li>
+                        <li><a href="#" id="liaf">FAQs</a></li>
+                        <li><a href="#" id="liaf">Book An Appointent</a></li>
+                    </ul>
+                </div>            
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <ul id="ullia">
+                        <li><a href="#" id="liaf">Privacy Policy</a></li>
+                        <li><a href="#" id="liaf">Terms & Conditions</a></li>
+                        <li><a href="#" id="liaf">Refer and Earn</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <ul id="ullia">
+                        <li><a href="#" id="liaf">Our Team</a></li>
+                        <li><a href="#" id="liaf">Blog</a></li>
+                        <li><a href="#" id="liaf">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright © 2020 Haüskey Realty, Brokerage | All rights reserved</p>
+                    <p class="small">Not intended to solicit buyers currently represented under Buyer’s Representative Agreement.</p>
+            </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a href="#"><i class="fa fa-facebook-f fa-2x"></i></a>&nbsp;
+                    <a href="#"><i class="fa fa-instagram fa-2x"></i></a>&nbsp;
+                    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
